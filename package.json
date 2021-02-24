@@ -1,12 +1,15 @@
 {
   "name": "eslint-config-erich-react",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Eric's eslint config for react apps",
+  "license": "MIT",
   "main": "index.js",
   "keywords": [
     "eslint"
   ],
-  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "peerDependencies": {
     "eslint-config-prettier": "^8.0.0",
     "eslint-config-standard": "^16.0.2",

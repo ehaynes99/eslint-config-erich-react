@@ -22,7 +22,7 @@ module.exports = {
     'dot-notation': ['warn', { allowPattern: '^([a-z]+(_[a-z]+)+|[A-Z].*)$' }],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': ['error', 'always'],
-    'quote-props': 'consistent',
+    'quote-props': ['error', 'consistent'],
     'quotes': ['error', 'single', { avoidEscape: true }],
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
