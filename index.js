@@ -1,0 +1,42 @@
+module.exports = {
+  parser: 'babel-eslint',
+  extends: [
+    'react-app',
+    'react-app/jest',
+    'standard',
+    'standard-react',
+    'prettier',
+  ],
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+  },
+  parserOptions: {
+    sourceType: 'module',
+    allowImportExportEverywhere: true,
+  },
+  rules: {
+    'arrow-parens': ['error', 'always'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'dot-notation': ['warn', { allowPattern: '^([a-z]+(_[a-z]+)+|[A-Z].*)$' }],
+    'one-var': ['error', 'never'],
+    'one-var-declaration-per-line': ['error', 'always'],
+    'quote-props': 'consistent',
+    'quotes': ['error', 'single', { avoidEscape: true }],
+    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react/jsx-boolean-value': 'off',
+    'react/jsx-curly-newline': 'off',
+    'react/jsx-handler-names': 'off',
+    'react/jsx-uses-react': 'off',
+    'react/prop-types': 'skipUndeclared',
+    'react/react-in-jsx-scope': 'off',
+    'semi': ['error', 'never'],
+    'semi-style': ['error', 'first'],
+    'space-before-function-paren': [
+      'error',
+      { anonymous: 'never', asyncArrow: 'always', named: 'never' },
+    ],
+  },
+}
